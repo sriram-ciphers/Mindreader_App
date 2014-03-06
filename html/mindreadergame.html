@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, user-scalable=yes">
+<meta name="HandheldFriendly" content="true" /> 
+<link rel="stylesheet" href="style.css" type="text/css">
+<script src="js/jquery-2.0.3.min.js"></script>
+<link rel="stylesheet" href="js/jquery.mobile-1.4.1.min.css">
+<script src="js/jquery.mobile-1.4.1.min.js"></script>
+<style>
+.resize_img{
+height: 19px;
+width: 17px;
+}
+</style>
+
+<title>Mind Reader</title>
+</head>
+
+<body>
+	<div data-role="page" id="firstpage" data-position="fixed">
+		<div data-role="header" data-role="popup" id="popupBasic">
+			<h1>Mind Reader Game</h1>
+			<!-- <a href="#popupBasic" data-rel="popup" data-icon="gear" class="ui-btn-right">Options</a> -->
+<a href="#instructionpage" role="button"  data-icon="gear" class="ui-btn-right ui-shadow ui-btn ui-corner-all ui-btn-inline" data-dialog="true" data-rel="dialog" data-transition="flip">Instruction to Play</a>
+		</div>
+		<div data-role="content" id="content">
+			<div class="ui-grid-d">
+				<div data-inset="true" class="ui-block-a">
+					1<img src="0.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					2<img src="1.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					3<img src="2.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					4<img src="3.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					5<img src="4.png" class="other_img resize_img">
+				</div>
+				<div class="ui-block-a">
+					6 <img src="5.png" class="other_img3 resize_img">
+				</div>
+				<div class="ui-block-b">
+					7<img src=6.png class="other_img2 resize_img">
+				</div>
+				<div class="ui-block-c">
+					8<img src="7.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-d">
+					9<img src="8.png" class="result1 resize_img">
+				</div>
+				<div class="ui-block-e">
+					10<img src="9.png" class="other_img resize_img">
+				</div>
+				<div class="ui-block-a">
+					11<img src="9.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					12<img src="8.png" class="other_img2 resize_img">
+				</div>
+				<div class="ui-block-c">
+					13<img src="0.png" class="other_img3 resize_img">
+				</div>
+				<div class="ui-block-d">
+					14<img src="6.png" class="other_img resize_img">
+				</div>
+				<div class="ui-block-e">
+					15<img src="5.png" class="other_img2 resize_img">
+				</div>
+				<div class="ui-block-a">
+					16<img src="4.png" class="other_img resize_img">
+				</div>
+				<div class="ui-block-b">
+					17<img src="3.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-c">
+					18<img src="8.png" class="result1 resize_img" id="final_result">
+				</div>
+				<div class="ui-block-d">
+					19<img src="1.png" class="other_img2 resize_img">
+				</div>
+				<div class="ui-block-e">
+					20<img src="7.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					21<img src="0.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					22<img src="1.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					23<img src="6.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					24<img src="3.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					25<img src="4.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					26<img src="5.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					27<img src="8.png" class="result1 resize_img resize_img">
+				</div>
+				<div class="ui-block-b">
+					28<img src="0.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					29<img src="8.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					30<img src="9.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					31<img src="0.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					32<img src="1.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					33<img src="2.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					34<img src="3.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					35<img src="4.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					36<img src="8.png" class="result1 resize_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					37<img src="6.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					38<img src="7.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					39<img src="8.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					40<img src="9.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					41<img src="9.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					42<img src="8.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					43<img src="2.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					44<img src="6.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					45<img src="8.png" class="result1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					46<img src="4.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					47<img src="3.png" class="other_img3 resize_img">
+				</div>
+				<div class="ui-block-b">
+					48<img src="7.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					49<img src="1.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					50<img src="0.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					51<img src="0.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					52<img src="1.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					53<img src="2.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					54<img src="8.png" class="result1 resize_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					55<img src="4.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					56<img src="5.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					57<img src="6.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					58<img src="7.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					59<img src="8.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					60<img src="9.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					61<img src="9.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					62<img src="8.png" class="other_img3 resize_img">
+				</div>
+				<div class="ui-block-b">
+					63<img src="8.png" class="result1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					64<img src="6.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					65<img src="5.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					66<img src="4.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					67<img src="3.png" class="other_img2 resize_img">
+				</div>
+				<div class="ui-block-b">
+					68<img src="5.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					69<img src="1.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					70<img src="0.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					71<img src="0.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					72<img src="8.png" class="result1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					73<img src="2.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					74<img src="3.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					75<img src="4.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					76<img src="5.png" class="other_img3 resize_img">
+				</div> 
+				<div data-inset="true" class="ui-block-b">
+					77<img src="6.png" class="other_img1 resize_img">
+				</div>
+				<div class="ui-block-b">
+					78<img src="7.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					79<img src="8.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					80<img src="9.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					81<img src="8.png" class="result1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					82<img src="7.png" class="other_img3 resize_img">
+				</div>
+				<div class="ui-block-b">
+					83<img src="8.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					84<img src="5.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					85<img src="6.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					86<img src="4.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					87<img src="2.png" class="other_img2 resize_img">
+				</div>
+				<div class="ui-block-b">
+					88<img src="3.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					89<img src="1.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					90<img src="8.png" class="result1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					91<img src="1.png" class="other_img3 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					92<img src="3.png" class="other_img2 resize_img">
+				</div>
+				<div class="ui-block-b">
+					93<img src="5.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					94<img src="0.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					95<img src="2.png" class="other_img1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-a">
+					96<img src="9.png" class="other_img2 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-b">
+					97<img src="7.png" class="other_img3 resize_img" >
+				</div>
+				<div class="ui-block-b">
+					98<img src="9.png" class="other_img resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-c">
+					99<img src="8.png" class="result1 resize_img">
+				</div>
+				<div data-inset="true" class="ui-block-d">
+					100<img src="6.png" class="other_img1 resize_img">
+				</div>
+			</div>
+		</div>
+		<fieldset class="ui-grid-a">
+			<div class="ui-block-a">
+				<button type="submit" data-theme="c" id="refresh">Refresh</button>
+			</div>
+			<div class="ui-block-b">
+				<button id="result" type="submit">Result</button>
+			</div>
+			<div id="Final_answer"></div>
+		</fieldset>
+		<script>
+			$(document).ready(function() {
+				$('#result').click(function() {
+							$("#Final_answer").show();
+							var final_result = $(".result1").attr("src");
+							//var s = $("#Final_answer").html('<img src="'+final_result+'"/>');
+							alert('<img src="'+final_result+'"/>');
+							return false;
+						});
+				var sriram=0;				
+				$("#refresh").click(function(){	
+					$("#Final_answer").hide();
+					var Final_Result_Images = ['0.png', '1.png', '2.png', '3.png', '4.png', '5.png','6.png','7.png','8.png','9.png'];
+					var Randomimages = ['4.png', '5.png','6.png','7.png','8.png','9.png','0.png', '1.png', '2.png', '3.png'];	
+					var Randomimages1 = ['6.png','7.png','8.png','9.png','0.png', '3.png', '4.png', '5.png','1.png', '2.png'];
+					var Randomimages2 = ['5.png','1.png', '2.png','3.png', '4.png', '5.png','6.png','7.png','8.png','0.png'];
+					var Randomimages3 = ['9.png','0.png', '3.png','5.png','1.png', '2.png','4.png','6.png','8.png','7.png'];
+		            var img_list = Math.floor(Math.random() * 10);
+		            var img_list1 = Math.floor(Math.random() * 10);
+		            var img_list2 = Math.floor(Math.random() * 10);
+		            var img_list3 = Math.floor(Math.random() * 10);
+		            var img_final_list = Math.floor(Math.random() * 10);
+		            $(".other_img").attr('src', Randomimages3[img_list]);
+		            $(".other_img1").attr('src', Randomimages2[img_list3]);
+		            $(".other_img2").attr('src', Randomimages1[img_list2]);
+		            $(".other_img3").attr('src', Randomimages[img_list1]);
+		            $(".result1").attr('src', Final_Result_Images[img_final_list]);
+					return false;
+			});
+			});
+		</script>
+		<div data-role="footer" data-position="fixed">
+			<h1>Copyright Protected</h1>
+		</div>
+	</div>
+	<div data-role="page" id="instructionpage" >
+		<div data-role="header">
+		<h1>Rules to play the Game</h1>
+		</div>
+		<div data-role="content">
+		<p>1. Think any double digit number and add those number. For ex: think a number 12 add like this 1+2 means 3 like this you should add.</p>
+		<p>2. Now you will get single or double digit number now with that number subtract with the number what you think</p>
+		<p>3. Now there will be one final number now go to the game and check the number in the screen see the image near to the image, see it closely</p>
+		<p>4. Finally click the result button you will see the magic.</p> 
+		</div>
+		<a href="#firstpage" data-role="button" data-icon="back" data-iconpos="top">Back</a>
+	</div>
+</body>
+</html>
